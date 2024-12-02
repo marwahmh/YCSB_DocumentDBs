@@ -23,4 +23,11 @@ mvn clean package -DskipTests -X -Dcheckstyle.skip
 
 ### Install couchdb from their website, and create the admin with username='Admin' and password='password', and then run this
 
+to load data: 
+
+./bin/ycsb load couchdb -P workloads/workloada -p hosts="127.0.0.1" -p url="http://Admin:password@127.0.0.1:5984" -p recordcount=10000 -p threadcount=1 -s > LA1.txt
+
+
+to run test: 
+
 ./bin/ycsb load couchdb -P workloads/workloada -p hosts="127.0.0.1" -p url="http://Admin:password@127.0.0.1:5984" -p recordcount=10000 -p threadcount=1 -s > LA1.txt
