@@ -36,13 +36,13 @@
 [INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ core ---
 [INFO] Changes detected - recompiling the module!
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 63 source files to /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/core/target/classes
-[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/core/src/main/java/site/ycsb/CommandLine.java: Some input files use or override a deprecated API.
-[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/core/src/main/java/site/ycsb/CommandLine.java: Recompile with -Xlint:deprecation for details.
+[INFO] Compiling 63 source files to /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/target/classes
+[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/src/main/java/site/ycsb/CommandLine.java: Some input files use or override a deprecated API.
+[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/src/main/java/site/ycsb/CommandLine.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ core ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/core/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ core ---
 [INFO] Nothing to compile - all classes are up to date
@@ -51,7 +51,7 @@
 [INFO] Tests are skipped.
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ core ---
-[INFO] Building jar: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/core/target/core-0.18.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/target/core-0.18.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:list (default-cli) @ core ---
 [INFO] 
@@ -73,7 +73,7 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ datastore-specific-descriptor ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/binding-parent/datastore-specific-descriptor/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/binding-parent/datastore-specific-descriptor/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ datastore-specific-descriptor ---
 [INFO] No sources to compile
@@ -109,18 +109,18 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ couchdb-binding ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/couchdb/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ couchdb-binding ---
 [INFO] Changes detected - recompiling the module!
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 6 source files to /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/couchdb/target/classes
-[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/couchdb/src/main/java/couchdb/CouchdbClient.java: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/couchdb/src/main/java/couchdb/CouchdbClient.java uses or overrides a deprecated API.
-[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/couchdb/src/main/java/couchdb/CouchdbClient.java: Recompile with -Xlint:deprecation for details.
+[INFO] Compiling 6 source files to /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/target/classes
+[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/main/java/couchdb/CouchdbClient.java: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/main/java/couchdb/CouchdbClient.java uses or overrides a deprecated API.
+[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/main/java/couchdb/CouchdbClient.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ couchdb-binding ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/couchdb/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ couchdb-binding ---
 [INFO] No sources to compile
@@ -129,7 +129,7 @@
 [INFO] Tests are skipped.
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ couchdb-binding ---
-[INFO] Building jar: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/couchdb/target/couchdb-binding-0.18.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/target/couchdb-binding-0.18.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.10:copy-dependencies (stage-dependencies) @ couchdb-binding ---
 [INFO] org.slf4j:slf4j-api:jar:1.7.25 already exists in destination.
@@ -145,28 +145,28 @@
 [INFO] commons-io:commons-io:jar:2.0.1 already exists in destination.
 [INFO] 
 [INFO] --- maven-assembly-plugin:2.5.5:single (default) @ couchdb-binding ---
-[INFO] Building tar: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB/couchdb/target/ycsb-couchdb-binding-0.18.0-SNAPSHOT.tar.gz
+[INFO] Building tar: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/target/ycsb-couchdb-binding-0.18.0-SNAPSHOT.tar.gz
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.10:list (default-cli) @ couchdb-binding ---
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for YCSB Root 0.18.0-SNAPSHOT:
 [INFO] 
-[INFO] YCSB Root .......................................... SUCCESS [  0.432 s]
-[INFO] Core YCSB .......................................... SUCCESS [  0.901 s]
-[INFO] Per Datastore Binding descriptor ................... SUCCESS [  0.044 s]
-[INFO] YCSB Datastore Binding Parent ...................... SUCCESS [  0.111 s]
-[INFO] Couchdb DB Binding ................................. SUCCESS [  0.427 s]
+[INFO] YCSB Root .......................................... SUCCESS [  0.415 s]
+[INFO] Core YCSB .......................................... SUCCESS [  0.788 s]
+[INFO] Per Datastore Binding descriptor ................... SUCCESS [  0.043 s]
+[INFO] YCSB Datastore Binding Parent ...................... SUCCESS [  0.104 s]
+[INFO] Couchdb DB Binding ................................. SUCCESS [  0.406 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.005 s
-[INFO] Finished at: 2024-12-02T22:28:10+01:00
+[INFO] Total time:  1.851 s
+[INFO] Finished at: 2024-12-02T23:41:42+01:00
 [INFO] ------------------------------------------------------------------------
-[OVERALL], RunTime(ms), 49493
-[OVERALL], Throughput(ops/sec), 202.0487745741822
+[OVERALL], RunTime(ms), 50281
+[OVERALL], Throughput(ops/sec), 198.88228157753426
 [TOTAL_GCS_G1_Young_Generation], Count, 7
-[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 7
-[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.014143414220192755
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 8
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.01591058252620274
 [TOTAL_GCS_G1_Concurrent_GC], Count, 0
 [TOTAL_GC_TIME_G1_Concurrent_GC], Time(ms), 0
 [TOTAL_GC_TIME_%_G1_Concurrent_GC], Time(%), 0.0
@@ -174,18 +174,18 @@
 [TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
 [TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
 [TOTAL_GCs], Count, 7
-[TOTAL_GC_TIME], Time(ms), 7
-[TOTAL_GC_TIME_%], Time(%), 0.014143414220192755
+[TOTAL_GC_TIME], Time(ms), 8
+[TOTAL_GC_TIME_%], Time(%), 0.01591058252620274
 [CLEANUP], Operations, 1
-[CLEANUP], AverageLatency(us), 3.0
-[CLEANUP], MinLatency(us), 3
-[CLEANUP], MaxLatency(us), 3
-[CLEANUP], 95thPercentileLatency(us), 3
-[CLEANUP], 99thPercentileLatency(us), 3
+[CLEANUP], AverageLatency(us), 2.0
+[CLEANUP], MinLatency(us), 2
+[CLEANUP], MaxLatency(us), 2
+[CLEANUP], 95thPercentileLatency(us), 2
+[CLEANUP], 99thPercentileLatency(us), 2
 [INSERT], Operations, 10000
-[INSERT], AverageLatency(us), 4925.7321
-[INSERT], MinLatency(us), 2150
-[INSERT], MaxLatency(us), 49407
-[INSERT], 95thPercentileLatency(us), 6507
-[INSERT], 99thPercentileLatency(us), 7279
+[INSERT], AverageLatency(us), 5003.7885
+[INSERT], MinLatency(us), 2246
+[INSERT], MaxLatency(us), 29503
+[INSERT], 95thPercentileLatency(us), 6355
+[INSERT], 99thPercentileLatency(us), 7659
 [INSERT], Return=OK, 10000
