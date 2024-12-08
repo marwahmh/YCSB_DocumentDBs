@@ -1,0 +1,229 @@
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -B -pl site.ycsb:couchdb-binding -am package -DskipTests dependency:list -DoutputAbsoluteArtifactFilename -DappendOutput=false -DoutputFile=/var/folders/lr/ysc7n3fx6sv02d60ctrl7k_r0000gn/T/tmpj9l_5jms'
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] YCSB Root                                                          [pom]
+[INFO] Core YCSB                                                          [jar]
+[INFO] Per Datastore Binding descriptor                                   [jar]
+[INFO] YCSB Datastore Binding Parent                                      [pom]
+[INFO] Couchdb DB Binding                                                 [jar]
+[INFO] 
+[INFO] ---------------------------< site.ycsb:root >---------------------------
+[INFO] Building YCSB Root 0.18.0-SNAPSHOT                                 [1/5]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ root ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ root ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:list (default-cli) @ root ---
+[INFO] 
+[INFO] ---------------------------< site.ycsb:core >---------------------------
+[INFO] Building Core YCSB 0.18.0-SNAPSHOT                                 [2/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ core ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ core ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ core ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ core ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 63 source files to /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/target/classes
+[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/src/main/java/site/ycsb/CommandLine.java: Some input files use or override a deprecated API.
+[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/src/main/java/site/ycsb/CommandLine.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ core ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ core ---
+[INFO] Building jar: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/target/core-0.18.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:list (default-cli) @ core ---
+[INFO] 
+[INFO] --------------< site.ycsb:datastore-specific-descriptor >---------------
+[INFO] Building Per Datastore Binding descriptor 0.18.0-SNAPSHOT          [3/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ datastore-specific-descriptor ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ datastore-specific-descriptor ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ datastore-specific-descriptor ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ datastore-specific-descriptor ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ datastore-specific-descriptor ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/binding-parent/datastore-specific-descriptor/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ datastore-specific-descriptor ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ datastore-specific-descriptor ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ datastore-specific-descriptor ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:list (default-cli) @ datastore-specific-descriptor ---
+[INFO] 
+[INFO] ----------------------< site.ycsb:binding-parent >----------------------
+[INFO] Building YCSB Datastore Binding Parent 0.18.0-SNAPSHOT             [4/5]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ binding-parent ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ binding-parent ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:copy-dependencies (stage-dependencies) @ binding-parent ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:list (default-cli) @ binding-parent ---
+[INFO] 
+[INFO] ---------------------< site.ycsb:couchdb-binding >----------------------
+[INFO] Building Couchdb DB Binding 0.18.0-SNAPSHOT                        [5/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ couchdb-binding ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ couchdb-binding ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ couchdb-binding ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ couchdb-binding ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 6 source files to /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/target/classes
+[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/main/java/couchdb/CouchdbClient.java: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/main/java/couchdb/CouchdbClient.java uses or overrides a deprecated API.
+[INFO] /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/main/java/couchdb/CouchdbClient.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ couchdb-binding ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ couchdb-binding ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ couchdb-binding ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ couchdb-binding ---
+[INFO] Building jar: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/target/couchdb-binding-0.18.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:copy-dependencies (stage-dependencies) @ couchdb-binding ---
+[INFO] org.slf4j:slf4j-api:jar:1.7.25 already exists in destination.
+[INFO] commons-codec:commons-codec:jar:1.4 already exists in destination.
+[INFO] org.apache.httpcomponents:httpclient-cache:jar:4.1.2 already exists in destination.
+[INFO] org.ektorp:org.ektorp:jar:1.3.0 already exists in destination.
+[INFO] org.apache.httpcomponents:httpclient:jar:4.1.2 already exists in destination.
+[INFO] commons-logging:commons-logging:jar:1.1.1 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-mapper-asl:jar:1.9.7 already exists in destination.
+[INFO] org.apache.httpcomponents:httpcore:jar:4.1.2 already exists in destination.
+[INFO] com.googlecode.json-simple:json-simple:jar:1.1 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-core-asl:jar:1.9.7 already exists in destination.
+[INFO] commons-io:commons-io:jar:2.0.1 already exists in destination.
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.5.5:single (default) @ couchdb-binding ---
+[INFO] Building tar: /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/target/ycsb-couchdb-binding-0.18.0-SNAPSHOT.tar.gz
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:list (default-cli) @ couchdb-binding ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for YCSB Root 0.18.0-SNAPSHOT:
+[INFO] 
+[INFO] YCSB Root .......................................... SUCCESS [  0.468 s]
+[INFO] Core YCSB .......................................... SUCCESS [  0.869 s]
+[INFO] Per Datastore Binding descriptor ................... SUCCESS [  0.046 s]
+[INFO] YCSB Datastore Binding Parent ...................... SUCCESS [  0.118 s]
+[INFO] Couchdb DB Binding ................................. SUCCESS [  0.422 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.021 s
+[INFO] Finished at: 2024-12-07T14:53:06+01:00
+[INFO] ------------------------------------------------------------------------
+java -cp /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/conf:/Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/target/couchdb-binding-0.18.0-SNAPSHOT.jar:/Users/marwasulaiman/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/marwasulaiman/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/marwasulaiman/.m2/repository/org/apache/httpcomponents/httpclient-cache/4.1.2/httpclient-cache-4.1.2.jar:/Users/marwasulaiman/.m2/repository/org/ektorp/org.ektorp/1.3.0/org.ektorp-1.3.0.jar:/Users/marwasulaiman/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/marwasulaiman/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.7/jackson-mapper-asl-1.9.7.jar:/Users/marwasulaiman/.m2/repository/commons-io/commons-io/2.0.1/commons-io-2.0.1.jar:/Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/target/core-0.18.0-SNAPSHOT.jar:/Users/marwasulaiman/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/marwasulaiman/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/marwasulaiman/.m2/repository/org/apache/httpcomponents/httpclient/4.1.2/httpclient-4.1.2.jar:/Users/marwasulaiman/.m2/repository/org/apache/httpcomponents/httpcore/4.1.2/httpcore-4.1.2.jar:/Users/marwasulaiman/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/marwasulaiman/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.7/jackson-core-asl-1.9.7.jar site.ycsb.Client -db couchdb.CouchdbClient -P workloads/workloade -p hosts=127.0.0.1 -p url=http://Admin:password@127.0.0.1:5984 -p recordcount=100000 -p operationcount=100000 -p threadcount=3 -s -t
+Command line: -db couchdb.CouchdbClient -P workloads/workloade -p hosts=127.0.0.1 -p url=http://Admin:password@127.0.0.1:5984 -p recordcount=100000 -p operationcount=100000 -p threadcount=3 -s -t
+YCSB Client 0.18.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2024-12-07 14:53:06:339 0 sec: 0 operations; est completion in 0 second 
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2024-12-07 14:53:16:323 10 sec: 5136 operations; 513.34 current ops/sec; est completion in 3 minutes [INSERT: Count=254, Max=24927, Min=2464, Avg=4071.96, 90=5071, 99=6715, 99.9=24927, 99.99=24927] [SCAN: Count=4885, Max=48511, Min=1701, Avg=5872.58, 90=9087, 99=12239, 99.9=16327, 99.99=48511] 
+2024-12-07 14:53:26:319 20 sec: 10701 operations; 556.72 current ops/sec; est completion in 2 minutes [INSERT: Count=294, Max=6143, Min=2440, Avg=3942.62, 90=4895, 99=5319, 99.9=6143, 99.99=6143] [SCAN: Count=5268, Max=13415, Min=1719, Avg=5468.96, 90=8367, 99=10295, 99.9=11687, 99.99=13415] 
+2024-12-07 14:53:36:323 30 sec: 16188 operations; 548.48 current ops/sec; est completion in 2 minutes [INSERT: Count=257, Max=5927, Min=2482, Avg=4006.37, 90=4955, 99=5727, 99.9=5927, 99.99=5927] [SCAN: Count=5230, Max=12079, Min=1736, Avg=5538.29, 90=8479, 99=10431, 99.9=11319, 99.99=12079] 
+2024-12-07 14:53:46:318 40 sec: 21617 operations; 543.17 current ops/sec; est completion in 2 minutes [INSERT: Count=270, Max=6983, Min=2486, Avg=3963.21, 90=4959, 99=5519, 99.9=6983, 99.99=6983] [SCAN: Count=5159, Max=12335, Min=1721, Avg=5603.6, 90=8559, 99=10471, 99.9=11607, 99.99=12335] 
+2024-12-07 14:53:56:320 50 sec: 26985 operations; 536.69 current ops/sec; est completion in 2 minutes [INSERT: Count=243, Max=6011, Min=2428, Avg=3918.45, 90=4955, 99=5667, 99.9=6011, 99.99=6011] [SCAN: Count=5125, Max=13271, Min=1734, Avg=5667.76, 90=8607, 99=10839, 99.9=12487, 99.99=13271] 
+2024-12-07 14:54:06:318 60 sec: 32243 operations; 525.91 current ops/sec; est completion in 2 minutes [INSERT: Count=246, Max=6551, Min=2732, Avg=4120.01, 90=4983, 99=5903, 99.9=6551, 99.99=6551] [SCAN: Count=5012, Max=12527, Min=1771, Avg=5781.26, 90=8575, 99=10959, 99.9=12143, 99.99=12527] 
+2024-12-07 14:54:16:319 70 sec: 37693 operations; 544.95 current ops/sec; est completion in 1 minute [INSERT: Count=263, Max=6031, Min=2476, Avg=4042.04, 90=5071, 99=5815, 99.9=6031, 99.99=6031] [SCAN: Count=5187, Max=12319, Min=1753, Avg=5577.95, 90=8383, 99=10247, 99.9=11775, 99.99=12319] 
+2024-12-07 14:54:26:319 80 sec: 43581 operations; 588.86 current ops/sec; est completion in 1 minute [INSERT: Count=295, Max=5947, Min=2380, Avg=3875.96, 90=4739, 99=5627, 99.9=5947, 99.99=5947] [SCAN: Count=5593, Max=10599, Min=1726, Avg=5157.44, 90=7687, 99=9391, 99.9=10311, 99.99=10599] 
+2024-12-07 14:54:36:320 90 sec: 49374 operations; 579.18 current ops/sec; est completion in 1 minute [INSERT: Count=293, Max=5423, Min=2488, Avg=3870.1, 90=4727, 99=5327, 99.9=5423, 99.99=5423] [SCAN: Count=5500, Max=10943, Min=1752, Avg=5246.46, 90=7803, 99=9551, 99.9=10463, 99.99=10943] 
+2024-12-07 14:54:46:318 100 sec: 55015 operations; 564.21 current ops/sec; est completion in 1 minute [INSERT: Count=276, Max=6447, Min=2456, Avg=3851.1, 90=4727, 99=5751, 99.9=6447, 99.99=6447] [SCAN: Count=5365, Max=11735, Min=1743, Avg=5390.61, 90=8159, 99=10063, 99.9=11191, 99.99=11735] 
+2024-12-07 14:54:56:323 110 sec: 60662 operations; 564.42 current ops/sec; est completion in 1 minute [INSERT: Count=298, Max=6975, Min=2400, Avg=3794.1, 90=4791, 99=5587, 99.9=6975, 99.99=6975] [SCAN: Count=5349, Max=11007, Min=1707, Avg=5398.86, 90=8083, 99=9911, 99.9=10735, 99.99=11007] 
+2024-12-07 14:55:06:318 120 sec: 66363 operations; 570.39 current ops/sec; est completion in 1 minute [INSERT: Count=283, Max=6427, Min=2478, Avg=3876.52, 90=4887, 99=6075, 99.9=6427, 99.99=6427] [SCAN: Count=5419, Max=11903, Min=1736, Avg=5328.72, 90=7959, 99=9847, 99.9=10719, 99.99=11903] 
+2024-12-07 14:55:16:318 130 sec: 72030 operations; 566.7 current ops/sec; est completion in 51 seconds [INSERT: Count=279, Max=5663, Min=2294, Avg=3791.13, 90=4771, 99=5471, 99.9=5663, 99.99=5663] [SCAN: Count=5387, Max=11527, Min=1798, Avg=5370.9, 90=8047, 99=9991, 99.9=10919, 99.99=11527] 
+2024-12-07 14:55:26:318 140 sec: 77656 operations; 562.6 current ops/sec; est completion in 41 seconds [INSERT: Count=260, Max=5683, Min=2410, Avg=3875.35, 90=4767, 99=5335, 99.9=5683, 99.99=5683] [SCAN: Count=5366, Max=11191, Min=1688, Avg=5403.92, 90=8163, 99=9943, 99.9=10887, 99.99=11191] 
+2024-12-07 14:55:36:318 150 sec: 83316 operations; 566 current ops/sec; est completion in 31 seconds [INSERT: Count=300, Max=6711, Min=2386, Avg=3770.33, 90=4743, 99=5527, 99.9=6711, 99.99=6711] [SCAN: Count=5360, Max=11703, Min=1724, Avg=5385.15, 90=8247, 99=10039, 99.9=10983, 99.99=11703] 
+2024-12-07 14:55:46:319 160 sec: 88964 operations; 564.74 current ops/sec; est completion in 20 seconds [INSERT: Count=271, Max=5587, Min=2370, Avg=3782.29, 90=4679, 99=5371, 99.9=5587, 99.99=5587] [SCAN: Count=5377, Max=11327, Min=1642, Avg=5388.02, 90=8199, 99=9903, 99.9=10791, 99.99=11327] 
+2024-12-07 14:55:56:318 170 sec: 94624 operations; 566.06 current ops/sec; est completion in 10 seconds [INSERT: Count=252, Max=6763, Min=2346, Avg=3773.08, 90=4651, 99=5619, 99.9=6763, 99.99=6763] [SCAN: Count=5408, Max=11527, Min=1754, Avg=5369.39, 90=8095, 99=9935, 99.9=10775, 99.99=11527] 
+2024-12-07 14:56:06:100 179 sec: 100000 operations; 549.64 current ops/sec; [CLEANUP: Count=3, Max=1, Min=0, Avg=0.33, 90=1, 99=1, 99.9=1, 99.99=1] [INSERT: Count=238, Max=7235, Min=2322, Avg=3846.12, 90=4799, 99=5759, 99.9=7235, 99.99=7235] [SCAN: Count=5138, Max=11447, Min=1672, Avg=5344.02, 90=8063, 99=9991, 99.9=10879, 99.99=11447] 
+[OVERALL], RunTime(ms), 179781
+[OVERALL], Throughput(ops/sec), 556.2323048598016
+[TOTAL_GCS_G1_Young_Generation], Count, 1458
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 796
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.44276091466840206
+[TOTAL_GCS_G1_Concurrent_GC], Count, 0
+[TOTAL_GC_TIME_G1_Concurrent_GC], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Concurrent_GC], Time(%), 0.0
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 1458
+[TOTAL_GC_TIME], Time(ms), 796
+[TOTAL_GC_TIME_%], Time(%), 0.44276091466840206
+[CLEANUP], Operations, 3
+[CLEANUP], AverageLatency(us), 0.3333333333333333
+[CLEANUP], MinLatency(us), 0
+[CLEANUP], MaxLatency(us), 1
+[CLEANUP], 95thPercentileLatency(us), 1
+[CLEANUP], 99thPercentileLatency(us), 1
+[INSERT], Operations, 4872
+[INSERT], AverageLatency(us), 3895.2048440065682
+[INSERT], MinLatency(us), 2294
+[INSERT], MaxLatency(us), 24927
+[INSERT], 95thPercentileLatency(us), 5135
+[INSERT], 99thPercentileLatency(us), 5675
+[INSERT], Return=OK, 4872
+[SCAN], Operations, 95128
+[SCAN], AverageLatency(us), 5455.451349760323
+[SCAN], MinLatency(us), 1642
+[SCAN], MaxLatency(us), 48511
+[SCAN], 95thPercentileLatency(us), 9039
+[SCAN], 99thPercentileLatency(us), 10263
+[SCAN], Return=OK, 95128
