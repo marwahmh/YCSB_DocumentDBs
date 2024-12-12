@@ -30,4 +30,4 @@ to load data:
 
 to run test: 
 
-./bin/ycsb run couchdb -P workloads/workloada -p hosts="127.0.0.1" -p url="http://Admin:password@127.0.0.1:5984" -p recordcount=10000 -p threadcount=1 -s > LA1.txt
+./bin/ycsb run couchdb -P workloads/workloada -p hosts="127.0.0.1" -p url="http://Admin:password@127.0.0.1:5984" -p recordcount=10000 -p threadcount=1 -p operationcount=10000 -s > LA1.txt
