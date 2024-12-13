@@ -34,7 +34,7 @@ LICENSE file.
     code of itself.
   </description>
   <dependencies>
-    <dependency>
+    <!-- <dependency>
       <groupId>site.ycsb</groupId>
       <artifactId>core</artifactId>
       <version>${project.version}</version>
@@ -258,7 +258,7 @@ LICENSE file.
       <groupId>site.ycsb</groupId>
       <artifactId>zookeeper-binding</artifactId>
       <version>${project.version}</version>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>site.ycsb</groupId>
       <artifactId>couchdb-binding</artifactId>

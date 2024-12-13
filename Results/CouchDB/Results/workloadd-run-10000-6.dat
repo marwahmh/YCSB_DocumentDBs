@@ -1,5 +1,5 @@
 [WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
-[DEBUG]  Running 'mvn -B -pl site.ycsb:couchdb-binding -am package -DskipTests dependency:list -DoutputAbsoluteArtifactFilename -DappendOutput=false -DoutputFile=/var/folders/lr/ysc7n3fx6sv02d60ctrl7k_r0000gn/T/tmpuxpcj9ge'
+[DEBUG]  Running 'mvn -B -pl site.ycsb:couchdb-binding -am package -DskipTests dependency:list -DoutputAbsoluteArtifactFilename -DappendOutput=false -DoutputFile=/var/folders/lr/ysc7n3fx6sv02d60ctrl7k_r0000gn/T/tmp961w4w9i'
 [INFO] Scanning for projects...
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Build Order:
@@ -153,16 +153,16 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for YCSB Root 0.18.0-SNAPSHOT:
 [INFO] 
-[INFO] YCSB Root .......................................... SUCCESS [  0.467 s]
-[INFO] Core YCSB .......................................... SUCCESS [  0.879 s]
-[INFO] Per Datastore Binding descriptor ................... SUCCESS [  0.043 s]
-[INFO] YCSB Datastore Binding Parent ...................... SUCCESS [  0.109 s]
-[INFO] Couchdb DB Binding ................................. SUCCESS [  0.412 s]
+[INFO] YCSB Root .......................................... SUCCESS [  0.422 s]
+[INFO] Core YCSB .......................................... SUCCESS [  0.827 s]
+[INFO] Per Datastore Binding descriptor ................... SUCCESS [  0.041 s]
+[INFO] YCSB Datastore Binding Parent ...................... SUCCESS [  0.105 s]
+[INFO] Couchdb DB Binding ................................. SUCCESS [  0.422 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.000 s
-[INFO] Finished at: 2024-12-07T13:53:41+01:00
+[INFO] Total time:  1.908 s
+[INFO] Finished at: 2024-12-13T08:59:10+01:00
 [INFO] ------------------------------------------------------------------------
 java -cp /Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/conf:/Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/couchdb/target/couchdb-binding-0.18.0-SNAPSHOT.jar:/Users/marwasulaiman/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/marwasulaiman/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/marwasulaiman/.m2/repository/org/apache/httpcomponents/httpclient-cache/4.1.2/httpclient-cache-4.1.2.jar:/Users/marwasulaiman/.m2/repository/org/ektorp/org.ektorp/1.3.0/org.ektorp-1.3.0.jar:/Users/marwasulaiman/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/marwasulaiman/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.7/jackson-mapper-asl-1.9.7.jar:/Users/marwasulaiman/.m2/repository/commons-io/commons-io/2.0.1/commons-io-2.0.1.jar:/Users/marwasulaiman/Documents/BDMA/Advanced DB/Project/YCSB_DocumentDBs/YCSB/core/target/core-0.18.0-SNAPSHOT.jar:/Users/marwasulaiman/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/marwasulaiman/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/marwasulaiman/.m2/repository/org/apache/httpcomponents/httpclient/4.1.2/httpclient-4.1.2.jar:/Users/marwasulaiman/.m2/repository/org/apache/httpcomponents/httpcore/4.1.2/httpcore-4.1.2.jar:/Users/marwasulaiman/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/marwasulaiman/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.7/jackson-core-asl-1.9.7.jar site.ycsb.Client -db couchdb.CouchdbClient -P workloads/workloadd -p hosts=127.0.0.1 -p url=http://Admin:password@127.0.0.1:5984 -p recordcount=10000 -p operationcount=10000 -p threadcount=6 -s -t
 Command line: -db couchdb.CouchdbClient -P workloads/workloadd -p hosts=127.0.0.1 -p url=http://Admin:password@127.0.0.1:5984 -p recordcount=10000 -p operationcount=10000 -p threadcount=6 -s -t
@@ -170,17 +170,17 @@ YCSB Client 0.18.0-SNAPSHOT
 
 Loading workload...
 Starting test.
-2024-12-07 13:53:41:988 0 sec: 0 operations; est completion in 0 second 
+2024-12-13 08:59:11:102 0 sec: 0 operations; est completion in 0 second 
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
-2024-12-07 13:53:45:159 3 sec: 10000 operations; 3132.83 current ops/sec; [READ: Count=9547, Max=23951, Min=1365, Avg=1791.39, 90=2103, 99=3267, 99.9=16175, 99.99=23951] [CLEANUP: Count=6, Max=0, Min=0, Avg=0, 90=0, 99=0, 99.9=0, 99.99=0] [INSERT: Count=0, Max=0, Min=0, Avg=0, 90=0, 99=0, 99.9=0, 99.99=0] [INSERT-FAILED: Count=453, Max=18223, Min=1896, Avg=2854.73, 90=3279, 99=15447, 99.9=18223, 99.99=18223] 
-[OVERALL], RunTime(ms), 3192
-[OVERALL], Throughput(ops/sec), 3132.8320802005014
+2024-12-13 08:59:14:353 3 sec: 10000 operations; 3056.23 current ops/sec; [READ: Count=9448, Max=23023, Min=1357, Avg=1798.8, 90=2101, 99=2891, 99.9=7211, 99.99=23023] [CLEANUP: Count=6, Max=0, Min=0, Avg=0, 90=0, 99=0, 99.9=0, 99.99=0] [INSERT: Count=552, Max=23311, Min=2190, Avg=3364.22, 90=4203, 99=5751, 99.9=23311, 99.99=23311] 
+[OVERALL], RunTime(ms), 3272
+[OVERALL], Throughput(ops/sec), 3056.2347188264057
 [TOTAL_GCS_G1_Young_Generation], Count, 9
-[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 13
-[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.4072681704260651
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 12
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.36674816625916873
 [TOTAL_GCS_G1_Concurrent_GC], Count, 0
 [TOTAL_GC_TIME_G1_Concurrent_GC], Time(ms), 0
 [TOTAL_GC_TIME_%_G1_Concurrent_GC], Time(%), 0.0
@@ -188,31 +188,25 @@ DBWrapper: report latency for each error is false and specific error codes to tr
 [TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
 [TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
 [TOTAL_GCs], Count, 9
-[TOTAL_GC_TIME], Time(ms), 13
-[TOTAL_GC_TIME_%], Time(%), 0.4072681704260651
-[READ], Operations, 9547
-[READ], AverageLatency(us), 1791.3919555881428
-[READ], MinLatency(us), 1365
-[READ], MaxLatency(us), 23951
-[READ], 95thPercentileLatency(us), 2281
-[READ], 99thPercentileLatency(us), 3267
-[READ], Return=OK, 9547
+[TOTAL_GC_TIME], Time(ms), 12
+[TOTAL_GC_TIME_%], Time(%), 0.36674816625916873
+[READ], Operations, 9448
+[READ], AverageLatency(us), 1798.7963590177815
+[READ], MinLatency(us), 1357
+[READ], MaxLatency(us), 23023
+[READ], 95thPercentileLatency(us), 2261
+[READ], 99thPercentileLatency(us), 2891
+[READ], Return=OK, 9448
 [CLEANUP], Operations, 6
 [CLEANUP], AverageLatency(us), 0.0
 [CLEANUP], MinLatency(us), 0
 [CLEANUP], MaxLatency(us), 0
 [CLEANUP], 95thPercentileLatency(us), 0
 [CLEANUP], 99thPercentileLatency(us), 0
-[INSERT], Operations, 0
-[INSERT], AverageLatency(us), 0.0
-[INSERT], MinLatency(us), 0
-[INSERT], MaxLatency(us), 0
-[INSERT], 95thPercentileLatency(us), 0
-[INSERT], 99thPercentileLatency(us), 0
-[INSERT], Return=UPDATE_CONFLICT, 453
-[INSERT-FAILED], Operations, 453
-[INSERT-FAILED], AverageLatency(us), 2854.726269315673
-[INSERT-FAILED], MinLatency(us), 1896
-[INSERT-FAILED], MaxLatency(us), 18223
-[INSERT-FAILED], 95thPercentileLatency(us), 3893
-[INSERT-FAILED], 99thPercentileLatency(us), 15447
+[INSERT], Operations, 552
+[INSERT], AverageLatency(us), 3364.2246376811595
+[INSERT], MinLatency(us), 2190
+[INSERT], MaxLatency(us), 23311
+[INSERT], 95thPercentileLatency(us), 4747
+[INSERT], 99thPercentileLatency(us), 5751
+[INSERT], Return=OK, 552

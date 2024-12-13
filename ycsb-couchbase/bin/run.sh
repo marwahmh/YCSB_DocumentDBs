@@ -3,17 +3,17 @@
 SCRIPT_PATH=$(dirname "$0")
 SCRIPT_ROOT=$(cd "$SCRIPT_PATH/.." && pwd)
 CLASSPATH="${SCRIPT_ROOT}/conf:${SCRIPT_ROOT}/lib/*"
-THREADCOUNT_LOAD=1
-THREADCOUNT_RUN=1
-RECORDCOUNT=100000
-OPCOUNT=100000
-RUNTIME=180
+THREADCOUNT_LOAD=8
+THREADCOUNT_RUN=8
+RECORDCOUNT=500000
+OPCOUNT=500000 # number of actual operations happening
+RUNTIME=2000
 RUN_MODE=0
 LOAD_MODE=0
 WORKLOAD=""
 EXTRAARGS=""
 
-while getopts "w:R:O:T:lrMS" opt
+while getopts "w:R:O:G:T:lrMS" opt
 do
   case $opt in
     w)
@@ -30,6 +30,10 @@ do
       ;;
     O)
       OPCOUNT=$OPTARG
+      ;;
+    G)
+      THREADCOUNT_LOAD=$OPTARG
+      THREADCOUNT_RUN=$OPTARG
       ;;
     T)
       RUNTIME=$OPTARG

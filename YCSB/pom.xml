@@ -173,7 +173,7 @@ LICENSE file.
     <!-- our internals -->
     <module>core</module>
     <module>binding-parent</module>
-    <!-- <module>distribution</module> -->
+    <module>distribution</module>
     <!-- all the datastore bindings, lex sorted please -->
     <!-- <module>accumulo1.9</module>
     <module>aerospike</module>
