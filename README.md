@@ -75,3 +75,17 @@ bin/run.sh -w workloads/workloada -R $record_count -O $record_count -G $thread_c
 • -G threadcount: Number of threads to use.
 
 5. Alternatively, you can use our runMult.sh script to run several workloads.
+
+
+## Running our queries
+
+1. For couchbase, load data in booking.json from the UI to a new DB.
+
+2. For couchdab , bulk load didn't work (memory issue), so i did this:
+
+  jq -c '.docs[]' transformed_data_booking.json | while read doc; do
+  curl -X POST http://Admin:password@127.0.0.1:5984/booking \
+    -H "Content-Type: application/json" \
+    -d "$doc"
+
+3. Run the queries as specified in the queries document. 
