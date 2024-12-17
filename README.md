@@ -83,7 +83,7 @@ We used dataset available here https://www.kaggle.com/datasets/promptcloud/trave
 
 1. For couchbase, load data in booking_final.json from the UI to a new DB. Get json lines data from here: https://drive.google.com/file/d/1CToVRyAItkVLivj-gwXn0wocmN4_vSMQ/view?usp=drive_link
 
-3. For couchdab , get the file booking_final_transformed_data.json here: , and then do this:
+3. For couchdab , get the file booking_final_transformed_data.json here: https://drive.google.com/file/d/1U_--1PZu2FPmx8fHhoP_Cd10kEx-GuSa/view?usp=sharing , and then do this:
 
   jq -c '.docs[]' booking_final_transformed_data.json | while read doc; do
   curl -X POST http://Admin:password@127.0.0.1:5984/booking \
