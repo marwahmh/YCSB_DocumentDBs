@@ -1,5 +1,7 @@
 # YCSB_DocumentDBs
 
+Couchdb binding is buit on https://github.com/arnaudsjs/YCSB-couchdb-binding?tab=readme-ov-file to support the latest version.
+
 ### To run on CouchDB,
 
 curl -O https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
